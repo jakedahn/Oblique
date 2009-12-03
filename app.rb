@@ -1,7 +1,7 @@
 require 'rubygems'
 require 'sinatra'
 require 'sass'
-require 'activerecord'
+require 'active_record'
 
 load 'config/config.rb'
 load 'models.rb'
