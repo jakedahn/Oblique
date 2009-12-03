@@ -1,0 +1,14 @@
+#api
+  The api is good for two things.
+  %ol
+    %li= "Retrieving random strategies."
+    %li= "Retrieving specific strategies by id."
+  To do this simply query the following:
+  %h3= "For Random"
+  %pre
+    curl http://oblique.heroku.com/api/random
+  %h3= "For Specific"
+  %pre
+    http://oblique.heroku.com/api/:id
+  %pre
+    curl http://oblique.heroku.com/api/23

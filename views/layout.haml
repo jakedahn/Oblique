@@ -1,0 +1,28 @@
+!!! strict
+%html
+  %head
+    %meta{:"http-equiv"=>"Content-Type", :content => "text/html; charset=utf-8" }
+    %title= @title
+    %meta{:name=>"Author", :content=>"author"}
+    %meta{:name=>"Robots", :content=>"index,all"}
+    %meta{:name=>"Keywords", :content=>"keywords"}
+    %meta{:name=>"Description", :content=>"description"}
+    
+    %link{:rel=>"stylesheet", :href=>"/style.css", :media=>"screen"}
+    
+  %body
+    %div#wrapper
+      %div#header
+        %h1= "Oblique Strategies"
+        %ul#navigation
+          %li
+            %a{:href => "/"}= "random"
+          %li
+            %a{:href => "/about"}= "about"
+          %li
+            %a{:href => "/docs"}= "api"
+      %div#content
+        = @flash
+        = yield
+      %div#footer
+        %a{:href => "http://ang.st"}= "Site by ang.st"
