@@ -1,6 +1,16 @@
 require 'rubygems'
 require 'haml'
 
+def get_flash
+  flash = request.cookies["flash"]
+  response.delete_cookie("flash")
+  return flash  
+end
+
+def set_flash(message)
+  response.set_cookie("flash", :value => message, :path => '/')
+end
+
 def partial(template, *args)
   options = args.extract_options!
   options.merge!(:layout => false)

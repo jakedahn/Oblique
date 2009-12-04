@@ -25,6 +25,14 @@ module Oblique
     get '/about' do
       haml :about
     end
+
+    get '/subscribe' do
+      haml :subscribe
+    end
+    
+    post '/subscribe' do
+      
+    end
     
     get '/show/:id' do
       @strategy = Strategy.find(params[:id])
