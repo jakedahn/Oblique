@@ -6,11 +6,16 @@ require 'active_record'
 
 load 'config/config.rb'
 load 'models.rb'
+load 'methods.rb'
 
 module Oblique
   class App < Sinatra::Default
     set :sessions, false
     set :run, false
+
+    before do
+      @flash = get_flash.nil? ? "" : "<span class='flash'>#{get_flash}</span>"  
+    end
 
     get '/style.css' do
       content_type 'text/css'
@@ -31,7 +36,11 @@ module Oblique
     end
     
     post '/subscribe' do
-      
+      email = params[:phone]+params[:provider]
+
+      Subscriber.new(:email => email).save ? set_flash("You are now subscribed, expect your first txt at 2pm PST.") : set_flash("Sorry but there was an error, please re-enter your phone number.")
+      redirect("/subscribe")
+
     end
     
     get '/show/:id' do

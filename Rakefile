@@ -12,9 +12,9 @@ namespace 'db' do
     end
 
     ActiveRecord::Migration.create_table :subscribers do |t|
-      t.string :phone
+      t.string :email
     end
-    Subscriber.new(:phone => "6122721534").save        
+    Subscriber.new(:email => "6122721534@tmomail.net").save        
     
   end  
 end
