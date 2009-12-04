@@ -17,11 +17,6 @@ module Oblique
       @flash = get_flash.nil? ? "" : "<span class='flash'>#{get_flash}</span>"  
     end
 
-    get '/style.css' do
-      content_type 'text/css'
-      sass :style
-    end
-
     get '/' do
       @strategy = Strategy.find(:all, :order => 'random()').first
       haml :index
