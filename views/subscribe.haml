@@ -1,0 +1,18 @@
+#subscribe
+  %h2 Subscribe
+  %p Receiving daily inspiration is key keeping your appetite for creative problem solving at its peak. To help out with this you can sign up to receive daily txt messages on your phone.
+  %form{:action=> "/subscribe", :method => "post", :id => "subscribeForm"}
+    %fieldset
+      %label{:for => "phone"}= "Phone Number: "
+      %input{:id => 'phone', :type=>"text", :name => "phone", :value =>""}
+      %label{:for => "provider"}= "Provider: "
+      %select{:name => "provider"}
+        %option{:value => "@tmomail.net"}= "T-Mobile"
+        %option{:value => "@vmobl.com"}= "Virgin Mobile"
+        %option{:value => "@cingularme.com"}= "Cingular"
+        %option{:value => "@messaging.sprintpcs.com"}= "Sprint"
+        %option{:value => "@vtext.com"}= "Verizon"
+        %option{:value => "@messaging.nextel.com"}= "Nextel"
+
+    %input{:id => 'submit', :type =>"submit", :value=> "Subscribe"}
+  

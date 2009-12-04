@@ -1,0 +1,79 @@
+/* @override http://looce.com:4567/style.css */
+
+body {
+	background: url(bg.png);
+	font-family: helvetica, arial, verdana, sans-serif; 
+	color: #222;
+text-shadow: #575757 0 2px 1px;
+	margin-top: 85px;
+}
+
+h1 {
+	margin: 0;
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 30px;
+	margin: 0 0 5px;
+}
+
+h3.strategy {
+	
+}
+
+a {
+	color: #2a2a2a;
+	text-decoration: none;
+
+}
+a:hover {
+	color: #25373d;
+	text-decoration: none;
+
+}
+
+#wrapper {
+	width: 500px;
+	margin: 0 auto;
+}
+
+ul#navigation {
+	margin: 10px 0 25px;
+	padding: 0;
+	list-style: none;
+	float: left;
+	width: 500px;
+}
+
+ul#navigation li {
+	float: left;
+	margin-right: 15px;
+}
+
+#content {
+	float: left;
+	width: 500px;
+	line-height: 25px;
+	font-size: 16px;
+}
+
+fieldset {
+	padding: 0;
+	border: none;
+}
+input {
+	margin-right: 28px;
+}
+input[type=submit] {
+	float: right;
+	margin-top: 10px;
+}
+
+pre {
+	background: #000;
+	text-shadow: none;
+	color: #009b03;
+	padding: 20px;
+	margin-left: -20px;
+}
