@@ -14,7 +14,7 @@ namespace 'db' do
     ActiveRecord::Migration.create_table :subscribers do |t|
       t.string :email
     end
-    Subscriber.new(:email => "6122721534@tmomail.net").save        
+    Subscriber.new(:email => "phonenumber@tmomail.net").save        
     
   end  
 end
