@@ -3,11 +3,6 @@
   %head
     %meta{:"http-equiv"=>"Content-Type", :content => "text/html; charset=utf-8" }
     %title= @title
-    %meta{:name=>"Author", :content=>"author"}
-    %meta{:name=>"Robots", :content=>"index,all"}
-    %meta{:name=>"Keywords", :content=>"keywords"}
-    %meta{:name=>"Description", :content=>"description"}
-    
     %link{:rel=>"stylesheet", :href=>"/style.css", :media=>"screen"}
     
   %body
@@ -21,13 +16,11 @@
             %a{:href => "/about"}= "about"
           %li
             %a{:href => "/docs"}= "api"
-          %li
-            %a{:href => "/subscribe"}= "subscribe"
       %div#content
         = @flash
         = yield
       %div#footer
-        %a{:href => "http://ang.st"}= "Site by ang.st"
+        %a{:href => "http://markupisart.com"}= "Site by MarkupIsArt"
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));

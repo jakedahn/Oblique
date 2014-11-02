@@ -1,3 +1,3 @@
-require 'app'
+require './app'
 
-run Oblique::App
+run Oblique
