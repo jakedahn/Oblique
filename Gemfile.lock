@@ -38,8 +38,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord (~> 4.1.6)
-  haml (~> 4.0.5)
+  activerecord
+  haml
   rack
-  sinatra (~> 1.4.5)
+  sinatra
   sqlite3
