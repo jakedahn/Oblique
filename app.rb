@@ -16,6 +16,10 @@ class Oblique < Sinatra::Base
     @flash = get_flash.nil? ? "" : "<span class='flash'>#{get_flash}</span>"  
   end
 
+  after do
+    ActiveRecord::Base.clear_active_connections!
+  end
+
   get '/' do
     @strategy = Strategy.offset(rand(Strategy.count)).first
     haml :index
