@@ -21,6 +21,7 @@ GEM
     i18n (0.7.0.beta1)
     json (1.8.1)
     minitest (5.4.2)
+    pg (0.17.1)
     rack (1.5.2)
     rack-protection (1.5.3)
       rack
@@ -38,8 +39,9 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activerecord
-  haml
+  activerecord (~> 4.1.6)
+  haml (~> 4.0.5)
+  pg
   rack
-  sinatra
+  sinatra (~> 1.4.5)
   sqlite3
