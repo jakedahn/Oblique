@@ -1,79 +1,21 @@
-/* @override http://looce.com:4567/style.css */
-
 body {
-	background: url(bg.png);
-	font-family: helvetica, arial, verdana, sans-serif; 
-	color: #222;
-text-shadow: #575757 0 2px 1px;
-	margin-top: 85px;
+	padding-top: 65px;
 }
 
-h1 {
-	margin: 0;
-	font-size: 48px;
-}
-
-h2 {
-	font-size: 30px;
-	margin: 0 0 5px;
-}
-
-h3.strategy {
-	
+.strategy {
+	width: 550px;
+	margin: 0 auto;
+	margin-top: 150px;
+	background: #f9f9f9;
+	font-size: 32px;
+	padding: 25px;
 }
 
 a {
-	color: #2a2a2a;
-	text-decoration: none;
-
-}
-a:hover {
-	color: #25373d;
-	text-decoration: none;
-
+	color: #ccc;
 }
 
-#wrapper {
-	width: 500px;
-	margin: 0 auto;
-}
-
-ul#navigation {
-	margin: 10px 0 25px;
-	padding: 0;
-	list-style: none;
-	float: left;
-	width: 500px;
-}
-
-ul#navigation li {
-	float: left;
-	margin-right: 15px;
-}
-
-#content {
-	float: left;
-	width: 500px;
-	line-height: 25px;
-	font-size: 16px;
-}
-
-fieldset {
-	padding: 0;
-	border: none;
-}
-input {
-	margin-right: 28px;
-}
-input[type=submit] {
-	float: right;
-	margin-top: 10px;
-}
-
-pre {
-	background: #000;
-	text-shadow: none;
-	color: #009b03;
-	padding: 20px;
-	margin-left: -20px;
+footer {
+	margin-top: 50px;
+	text-align: center;
 }

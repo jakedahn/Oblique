@@ -3,24 +3,31 @@
   %head
     %meta{:"http-equiv"=>"Content-Type", :content => "text/html; charset=utf-8" }
     %title= @title
+    %link{:href=>"//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css", :rel=>"stylesheet"}
     %link{:rel=>"stylesheet", :href=>"/style.css", :media=>"screen"}
     
   %body
-    %div#wrapper
-      %div#header
-        %h1= "Oblique Strategies"
-        %ul#navigation
+    .navbar.navbar-default.navbar-fixed-top
+      .container
+         
+        %a.navbar-brand{:href => "/"}
+          Oblique Strategies
+        %ul.nav.navbar-nav.pull-right
           %li
             %a{:href => "/"}= "random"
           %li
             %a{:href => "/about"}= "about"
           %li
             %a{:href => "/docs"}= "api"
-      %div#content
-        = @flash
-        = yield
-      %div#footer
+
+    .container
+      = @flash
+      = yield
+
+      %footer
         %a{:href => "http://markupisart.com"}= "Site by MarkupIsArt"
+        %a{:href => "http://www.rtqe.net/ObliqueStrategies/"}= "Strategies by Brian Eno/Peter Schmidt"
+
     <script type="text/javascript">
     var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
     document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
