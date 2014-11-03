@@ -7,10 +7,4 @@ gem 'haml', '~>4.0.5'
 gem 'activerecord', '~>4.1.6'
 gem 'rack'
 
-group :development do
-  gem 'sqlite3'
-end
-
-group :production do
-  gem 'pg'
-end
+gem 'sqlite3'
